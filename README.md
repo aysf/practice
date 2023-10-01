@@ -1,11 +1,13 @@
 # Daily Practice Coding
 
-a small progress from daily practicing routine will make big impact...     
-52 weeks to be fullstack software engineer!
+a small progress from daily practicing routine will make a big impact!    
+52 weeks to be an expert fullstack software engineer!
 
 ## Programming Language
 
 - How to create new Project?
+- Naming Convention?
+- Modularize Code?
 - How to run developer mode (reload when changes occured)?
 - How to get package from personal or private repository like github?
 - How to use various data type?
@@ -13,6 +15,7 @@ a small progress from daily practicing routine will make big impact...
     - (string) how to concate string?
     - (string) how to interpolate string?
     - (number) what is the maximum number?
+- Example concurrency?
 
 
 ### How to Create new project
@@ -78,7 +81,100 @@ a small progress from daily practicing routine will make big impact...
     ```
 - run `node app.js`
 
+### Naming Convention
 
+#### Python
+
+- file -> snake_case
+
+
+### Modularize Code
+
+#### Python 
+
+source: 
+- https://realpython.com/absolute-vs-relative-python-imports/
+- https://www.youtube.com/watch?v=e9yMYdnSlUA
+
+note:
+- **_module_** is an individual python file
+- **_package_** is a directory containing multiple Python modules
+
+task:
+
+Open up your IDE and create these following structure
+
+```
+└── project
+    ├── people
+    │   ├── budi.py
+    │   └── tono.py
+    └── ani.py
+    └── main.py
+```
+
+put age variable for each person, for example
+
+```py
+# budi.py
+age = 5
+```
+
+```py
+# tono.py
+age = 9
+```
+
+```py
+# ani.py
+age = 3
+```
+
+use the package and module in the `main.py` and play around with it!
+
+1. print ani age 
+2. print budi age
+3. use `__init__.py` to print something when importing package
+4. use some importing syntax like: `import [package|module]` and `from package import [subpackage|module|object(class|function)] as [custom_name]`
+
+
+
+### Example Simple Concurrency
+
+print bip every 0.3 second and bop every 2 second
+
+### Ruby
+
+```rb
+def print_bip(queue)
+    loop do
+        sleep(0.3)
+        queue.push("bip")
+    end
+end
+
+def print_bop(queue)
+    loop do
+        sleep(2)
+        queue.push("bop")
+    end
+end
+
+bip_queue = Queue.new
+bop_queue = Queue.new
+
+Thread.new { print_bip(bip_queue) }
+Thread.new { print_bop(bop_queue) }
+
+loop do 
+    if bip_queue.size > 0 
+        puts bip_queue.pop
+    end
+    if bop_queue.size > 0 
+        puts bop_queue.pop
+    end 
+end
+```
 
 
 ## DevOps
