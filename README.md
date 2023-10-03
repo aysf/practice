@@ -99,6 +99,32 @@ source:
 note:
 - **_module_** is basically just a container where we can store groups of method
 
+task:
+
+create a file, `people.rb`, with the following contents
+
+```
+# frozen_string_literal: true
+
+module Person
+  module Ani
+    AGE = 3
+  end
+
+  module Budi
+    AGE = 3
+  end
+
+  module Tono
+    AGE = 3
+  end
+end
+
+puts Person::Ani::AGE
+puts Person::Budi::AGE
+puts Person::Tono::AGE
+```
+
 
 
 #### Python 
