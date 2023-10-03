@@ -90,6 +90,17 @@ a small progress from daily practicing routine will make a big impact!
 
 ### Modularize Code
 
+#### Ruby
+
+source:
+- https://www.youtube.com/watch?v=Cq_dKYAqMrI
+- https://ryanlue.com/posts/2017-03-03-how-to-structure-a-library
+
+note:
+- **_module_** is basically just a container where we can store groups of method
+
+
+
 #### Python 
 
 source: 
