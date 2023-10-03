@@ -103,7 +103,7 @@ task:
 
 create a file, `people.rb`, with the following contents
 
-```
+```rb
 # frozen_string_literal: true
 
 module Person
