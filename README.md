@@ -83,9 +83,11 @@ a small progress from daily practicing routine will make a big impact!
 
 ### Naming Convention
 
-#### Python
+#### Ruby
+- constant -> CAPITAL_SNAKE_CASE
 
-- file -> snake_case
+#### Python
+- filename -> snake_case
 
 
 ### Modularize Code
