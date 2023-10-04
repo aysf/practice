@@ -15,6 +15,7 @@ a small progress from daily practicing routine will make a big impact!
     - (string) how to concate string?
     - (string) how to interpolate string?
     - (number) what is the maximum number?
+- Conditionals
 - Example concurrency?
 
 
